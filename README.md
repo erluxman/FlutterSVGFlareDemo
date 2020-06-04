@@ -43,6 +43,6 @@ Similar to vector graphics, Flutter doesn't support vector animation natively. [
 
             animation: "world")
 
-[visit library](https://pub.dev/packages/flare_flutter)
+[visit flare_flutter](https://pub.dev/packages/flare_flutter)
 
 ![a](art/61flare.gif)
