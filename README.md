@@ -1,16 +1,48 @@
-# svgflaredemo
+# SVG and Flair Animation Demo app
 
-A new Flutter application.
+## Using SVG
 
-## Getting Started
+Even though flutter doesn't support any vector graphics out of the box, the package `flutter_svg` can render `svg` into Flutter app.
 
-This project is a starting point for a Flutter application.
+1. Add dependency :
+        `flutter_svg: ^version`
 
-A few resources to get you started if this is your first Flutter project:
+2. Start using it like Flutter `Image` Widget.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+        //load SVG from network
+        SvgPicture.network("https://image.flaticon.com/icons/svg/124/124555.svg", height: 200)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+        //load SVG from assets folder
+        SvgPicture.asset("assets/ufo.svg", height: 200)
+
+[visit flutter_svg](https://pub.dev/packages/flutter_svg#-readme-tab-)
+
+![a](art/60svg.png)
+
+## Using Flare/rive
+
+Similar to vector graphics, Flutter doesn't support vector animation natively. [Rive (rive.app)](https://rive.app/explore) helps with amazing vector animations in Flutter.
+
+1. Add flare in `pubspec.yaml`:
+
+        flare_flutter: ^version
+
+2. Download flare files from [rive.app](https://rive.app/explore) & put those `.flr` files into `assets/` folder:
+
+        assets:
+            - assets/
+
+3. Start using `FlareActor` widget.
+
+        FlareActor(
+            "assets/world.flr",
+
+            //🚨Caution🚨, you can find 👉 #animation name in
+            //left bottom 👈👇 of rive.app designer tool when
+            //Animation tab is selected
+
+            animation: "world")
+
+[visit library](https://pub.dev/packages/flare_flutter)
+
+![a](art/61flare.gif)
