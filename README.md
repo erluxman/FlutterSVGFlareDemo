@@ -1,5 +1,9 @@
 # SVG and Flair Animation Demo app
 
+This sample is build for tip number #60 and #61 of [❤️Awesome Flutter ❤️ tips and tricks ❤️](https://github.com/erluxman/awesomefluttertips)
+
+Initially this repo contains basic usage of SVG and Flare files, but in future I want to develop this repo as a repo to demonstrate animations and vector graphics in Flutter
+
 ## Using SVG
 
 Even though flutter doesn't support any vector graphics out of the box, the package `flutter_svg` can render `svg` into Flutter app.
